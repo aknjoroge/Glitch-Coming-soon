@@ -18,3 +18,9 @@ if ($(".glitch-time").length) {
     }
     ```
 ````
+
+### Preview
+
+<a href="#">
+    <img src="https://github.com/aknjoroge/Glitch-Coming-soon/blob/master/preview.png" alt="Logo" width="1366" height="615">
+  </a>
