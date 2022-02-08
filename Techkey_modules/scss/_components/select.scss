@@ -1,0 +1,104 @@
+.bootstrap-select {
+  display: inline-block;
+  max-width: 300px;
+  width: 100%;
+  color: #999;
+  font-size: 0.875rem;
+}
+.bootstrap-select .bs-caret {
+  float: right;
+  color: #0ff;
+}
+.bootstrap-select .bs-caret span {
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-left-width: 5px;
+}
+.bootstrap-select select {
+  display: none;
+}
+.bootstrap-select .btn.dropdown-toggle {
+  display: inline-block;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #0ff;
+  padding: 11px 24px;
+  text-transform: none;
+  font-weight: 300;
+  color: inherit;
+  font: inherit;
+  margin-bottom: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.bootstrap-select .btn.dropdown-toggle:before,
+.bootstrap-select .btn.dropdown-toggle:after {
+  content: none;
+}
+.bootstrap-select .dropdown-menu {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.bootstrap-select > .dropdown-menu {
+  width: 100%;
+}
+.bootstrap-select ul.dropdown-menu {
+  position: static;
+  width: 100%;
+  opacity: 0;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.bootstrap-select ul.dropdown-menu li {
+  max-width: 100%;
+  background-color: #0ff;
+  cursor: pointer;
+  padding: 11px 24px;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.bootstrap-select ul.dropdown-menu li.selected,
+.bootstrap-select ul.dropdown-menu li:hover {
+  background: #111517;
+  color: #fff;
+}
+.bootstrap-select ul.dropdown-menu li a {
+  padding: 0;
+  color: inherit;
+  font: inherit;
+}
+.bootstrap-select ul.dropdown-menu li a .glyphicon {
+  display: none;
+}
+.bootstrap-select ul.dropdown-menu li a:before {
+  content: none;
+}
+.bootstrap-select ul.dropdown-menu li a:hover,
+.bootstrap-select ul.dropdown-menu li a:active,
+.bootstrap-select ul.dropdown-menu li a:focus {
+  background-color: transparent;
+  color: inherit;
+}
+.bootstrap-select ul.dropdown-menu li:before {
+  content: none;
+}
+.bootstrap-select.open ul.dropdown-menu {
+  opacity: 1;
+}
+.bootstrap-select.open .bs-caret {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

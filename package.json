@@ -1,0 +1,26 @@
+{
+  "name": "coming_soon_page",
+  "version": "2.2.2",
+  "description": "Updated coming soon page using MVC and Sass",
+  "main": "index.html",
+  "scripts": {
+    "build-icons": "purgecss --css css/font-awesome.min.css --content index.html --output ./Techkey_modules/build",
+    "build-glitch": "purgecss --css css/glitch.css --content index.html --output ./Techkey_modules/build",
+    "build-srollbar": "purgecss --css css/jquery.mCustomScrollbar.min.css --content index.html js/*.js --output ./Techkey_modules/build",
+    "build-css": "purgecss --css css/style.css --content index.html js/*.js --output ./Techkey_modules/build",
+    "build-bs4": "purgecss --css css/bootstrap.css --content index.html js/*.js --output ./Techkey_modules/build",
+    "build-fullPage": "purgecss --css css/jquery.fullPage.css --content index.html js/*.js --output ./Techkey_modules/build",
+    "build-scrollbar": "purgecss --css css/jquery.mCustomScrollbar.min.css --content index.html js/*.js --output ./Techkey_modules/build",
+    "build-sass": " node-sass Techkey_modules/scss/main.scss Techkey_modules/scss/build/main.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "aknjoroge"
+  },
+  "author": "Alexander Karanja",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "purgecss": "^4.0.3"
+  }
+}

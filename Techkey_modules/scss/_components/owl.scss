@@ -1,0 +1,26 @@
+.owl-wrapper-outer {
+  margin-bottom: 18px;
+}
+
+.owl-pagination {
+  display: inline-block;
+}
+
+.owl-controls .owl-page {
+  float: left;
+  padding: 2px;
+  height: 14px;
+}
+.owl-controls .owl-page span {
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #01f4f4;
+  cursor: pointer;
+  float: left;
+  height: 10px;
+  transition: background 0.25s ease;
+  width: 10px;
+}
+.owl-controls .owl-page.active span {
+  background: #01f4f4;
+}

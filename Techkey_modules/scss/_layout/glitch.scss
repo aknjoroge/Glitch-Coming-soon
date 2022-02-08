@@ -1,0 +1,209 @@
+.glitch {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 294px;
+  overflow: hidden;
+  font-family: Lato;
+}
+.glitch-figure {
+  display: inline-block;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 42px;
+  right: 0;
+  bottom: 0;
+  left: -7px;
+  margin: auto;
+  font-size: 200px;
+  font-weight: 100;
+  width: 100%;
+}
+
+/* ========================= */
+.glitch-triangle {
+  display: inline-block;
+  width: 200px;
+  height: 110px;
+  vertical-align: middle;
+  top: -69px;
+  left: -4px;
+  position: relative;
+}
+.clip-figure {
+  height: 220px;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  display: inline-block;
+}
+.mask-first {
+  display: inline-block;
+  height: 220px;
+  width: 200px;
+  position: relative;
+  -webkit-transform: rotate(63deg);
+  -ms-transform: rotate(63deg);
+  transform: rotate(63deg);
+  top: -67px;
+  left: 43px;
+  overflow: hidden;
+}
+.mask-second {
+  display: inline-block;
+  height: 220px;
+  width: 200px;
+  position: relative;
+  -webkit-transform: rotate(-127deg);
+  -ms-transform: rotate(-127deg);
+  transform: rotate(-127deg);
+  bottom: -74px;
+  left: -36px;
+  overflow: hidden;
+}
+.clip-numb {
+  font-size: 128px;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: -18px;
+  left: -10px;
+  -webkit-transform: rotate(63deg);
+  -ms-transform: rotate(63deg);
+  transform: rotate(63deg);
+}
+
+/* ========================= */
+.glitch-clock {
+  display: block;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 128px;
+  text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: default;
+}
+.glitch-triang {
+  width: 200px;
+  height: 5px;
+  margin: 0 auto;
+  color: #fff;
+  background: #fff;
+  position: relative;
+}
+.glitch-triang:before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 7px solid #fff;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  -webkit-transform: rotate(-135deg) skew(18deg, 18deg);
+  -ms-transform: rotate(-135deg) skew(18deg, 18deg);
+  transform: rotate(-135deg) skew(18deg, 18deg);
+  left: -10px;
+  top: -110px;
+}
+
+.time-dott,
+.time-dott-sec {
+  display: inline-block;
+  position: relative;
+}
+.time-dott {
+  left: 17px;
+}
+.time-dott-sec {
+  left: -17px;
+}
+.glitch-clock .glitch-time {
+  display: block;
+  position: relative;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 1;
+  letter-spacing: -6px;
+}
+.glitch-clock .glitch-time i {
+  color: white;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  position: absolute;
+  bottom: 17px;
+}
+.glitch-clock .glitch-time i.i1 {
+  margin-left: -10px;
+}
+.glitch-clock .glitch-time i.i2 {
+  margin-left: -43px;
+}
+.glitch-clock .glitch-time i.i3 {
+  margin-left: 16px;
+}
+
+.glitch-clock.is-off {
+  -webkit-animation: is-off 2s linear infinite !important;
+  animation: is-off 2s linear infinite !important;
+}
+.glitch .glitch-figure {
+  -webkit-transform: skewX(0deg);
+  transform: skewX(0deg);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-animation: tr-bag 4s linear infinite;
+  animation: tr-bag 4s linear infinite;
+}
+.glitch .glitch-clock {
+  -webkit-transform: skewX(0deg);
+  transform: skewX(0deg);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-animation: clock-bag 4s linear infinite;
+  animation: clock-bag 4s linear infinite;
+}
+.glitch .glitch-clock .glitch-time .glitch-after,
+.glitch .glitch-clock .glitch-time .glitch-before {
+  display: block;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  /* background: #111;
+      */
+  overflow: hidden;
+  width: 100%;
+  height: 128px;
+  clip: rect(0, 900px, 0, 0);
+}
+.glitch .glitch-clock .glitch-time .glitch-before {
+  left: -2px;
+  text-shadow: 2px 0 #00f;
+  -webkit-animation: c2 1s infinite linear alternate-reverse;
+  animation: c2 1s infinite linear alternate-reverse;
+}
+.glitch .glitch-clock .glitch-time .glitch-after {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  -webkit-animation: c1 2s infinite linear alternate-reverse;
+  animation: c1 2s infinite linear alternate-reverse;
+}
+.first-numb,
+.second-numb,
+.third-numb {
+  display: inline;
+}
+.fadein {
+  display: none;
+}

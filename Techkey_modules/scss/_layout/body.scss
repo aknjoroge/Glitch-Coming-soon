@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: metropolis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #333333;
+  background-color: #fff;
+}
+
+* {
+  outline: none;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #0a0c0d;
+  font-family: metropolis;
+  font-weight: 300;
+  line-height: 1.9;
+  font-size: 16px;
+  color: #fdfdfd;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #111;
+  min-width: 320px;
+}
+_:-ms-fullscreen {
+  padding: 12px 59px 10px;
+}
+
+_:-ms-fullscreen {
+  top: 12px;
+}
+.skill-name {
+  line-height: 1.4;
+}
+
+.skill-wrap {
+  margin: 0 10px;
+  text-align: center;
+}
+
+body:after {
+  background: #fff;
+  bottom: 0;
+  content: "";
+  left: 0;
+  right: 0;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  z-index: 121121;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.loader:after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.no-line a:before,
+a.no-line:before {
+  display: none;
+}
+
+.logotype {
+  display: inline-block;
+  padding: 0;
+  margin-left: -5px;
+  font: 400 30px/1 intro;
+  color: #fff;
+  letter-spacing: 0.15em;
+  margin-top: 20px;
+}
+.logotype:visited,
+.logotype:hover,
+.logotype:active,
+.logotype:focus {
+  color: #fff;
+}
+.logotype.hidde {
+  opacity: 0;
+  visibility: hidden;
+}
+///////////////////////////////
+//////////custom cursor
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 999;
+  transition: transform 0.2s;
+}
+
+html,
+* {
+  cursor: none;
+}

@@ -1,0 +1,53 @@
+.map-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.closed {
+  background: #000;
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+  height: 30px;
+  top: 0;
+  width: 30px;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.closed:before {
+  content: url("../img/closer.svg");
+}
+
+.contact-me.open {
+  border-color: transparent;
+}
+.contact-me.open .map-canvas {
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+}
+.contact-me.open .closed {
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 767px) {
+  .map-canvas {
+    left: 12px;
+    right: 12px;
+  }
+
+  .closed {
+    right: 12px;
+  }
+}
